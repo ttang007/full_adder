@@ -1,5 +1,14 @@
-# full_adder
+## 手把手教你用 VScode 搭建轻量级 Verilog 仿真环境
 
-- "use <make plot> for plot the waveform"
-- "use <make clean> for clean"
-- "use <make> for build again"
+这里通过实现一个简单的全加器，来演示整个环境如何使用
+
+首先新建一个文件夹`full_adder`，文件夹中新建三个文件`half_adder.v、full_adder.v、full_adder_tb.v`
+
+我们编写`*.v`代码文件后，把`makefile`文件放在目录顶层，然后打开该文件，找到文中`V_SOURCES`，在后面添加你编写的所有`*.v`文件的相对路径，本示例编写了三个文件：`full_adder_tb.v`、`full_adder.v`、`half_adder.v`，将这三个文件路径添加进去，`\`符号代表换行符，最后一行不需要添加
+
+每次编写完自己的 verilog/HDL 代码后，只需要在`makefile`中添加`V_SOURCES`就可以了，其他地方不用动
+
+如下指令完成编译和绘制仿真波形
+- use <make plot> for plot the waveform
+- use <make clean> for clean
+- use <make> for build again
