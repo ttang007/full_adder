@@ -1,6 +1,8 @@
 ## 手把手教你用 VScode 搭建轻量级 Verilog 仿真环境
 
-这里通过实现一个简单的全加器，来演示整个环境如何使用
+### 1、安装 vscode + iverilog + make
+
+### 2、这里通过实现一个简单的全加器，来演示整个环境如何使用
 
 首先新建一个文件夹`full_adder`，文件夹中新建三个文件`half_adder.v、full_adder.v、full_adder_tb.v`
 
