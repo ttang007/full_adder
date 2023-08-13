@@ -9,6 +9,10 @@
 每次编写完自己的 verilog/HDL 代码后，只需要在`makefile`中添加`V_SOURCES`就可以了，其他地方不用动
 
 如下指令完成编译和绘制仿真波形
-- use <make plot> for plot the waveform
-- use <make clean> for clean
-- use <make> for build again
+```
+#build again
+$make
+#plot the waveform
+$make plot
+#clean
+$make clean
